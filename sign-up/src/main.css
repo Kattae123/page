@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Sen', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #272E3F;
+}
+
+:root {
+    --color-main: linear-gradient(195deg,#EC407A 0%,#D81B60 100%);
+    --color-main2: linear-gradient(195deg,#40ec40 0%,#1bd84a 100%);
+    --good-orange: rgb(239, 59, 45);
+    --color-p: rgb(149 149 149);
+    --button-color: linear-gradient(195deg,#2F034A 0%,#541690 100%);
+    --new--button--color: linear-gradient(195deg,#2F034A 0%,#541690 100%);
+    --color-main-amazing: linear-gradient(195deg,#222222 0%,#181818 100%);
+    --container-color: rgba(0, 0, 0, 0.527);
+    --button-color-hover:linear-gradient(195deg,#4c0579 0%,#681ab6 100%);
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.background {
+    position: relative;
+    width: 50%;
+    height: 711px;
+    margin: 0 0 0 18px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.sign__up__main {
+    position: relative;
+    width: 50%;
+    height: 95vh;
+    margin: 0 18px 0 18px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Comienzo Sección de botón volver */
+
+.button__back__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 15px;
+    left: 14px;
+    width: 40px;
+    height: 40px;
+    background-image: var(--button-color);
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    justify-content: center;
+}
+
+.button__back__container:hover {
+    background-image: var(--button-color-hover);
+}
+
+.span__icon {
+    position: absolute;
+    display: block;
+}
+
+.span__icon .ion-android-arrow-back {
+    font-size: 25px;
+    color: #020202b6;
+}
+
+.button__back__container a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgba(13, 13, 20, 0.842);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.button__back__container a:hover{
+    color: #1e0950;
+    font-weight: 600;
+}
+
+.button__back__container p {
+    display: none;
+}
+
+/* Final seccion botón volver */
+
+.sign__up__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign__up__header h1 {
+    /* color: rgb(255, 255, 255); */
+    color: rgb(113 14 203);
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 20px 0px;
+}
+
+.sign__up__header p {
+    color: rgb(149 149 149);
+    margin: 15px 0 60px 0;
+    font-size: .9em;
+}
+
+/* .card__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+} */
+
+.div__card__main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-image: var(--container-color);
+    border-radius: 10px;
+    height: auto;
+}
+
+.card__main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80%;
+}
+
+.div__form {
+    width: 100%;
+}
+
+.div__form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__space {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+.form__space div {
+    margin-bottom: 20px;
+}
+
+.div__name {
+    height: 40px;
+    width: 100%;
+}
+
+.div__name input {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    outline-color: rgb(222, 39, 105);
+}
+
+.div__email {
+    height: 40px;
+    width: 100%;
+}
+
+.div__email input {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    outline-color: rgb(222, 39, 105);
+}
+
+.div__password {
+    height: 40px;
+    width: 100%;
+}
+
+.div__password input {
+    width: 100%;
+    height: 100%;
+    /* border: .5px solid rgb(110, 110, 110); */
+    border-radius: 5px;
+    border: 0.5px solid rgb(196, 196, 196);
+    outline-color: rgb(222, 39, 105);
+}
+
+
+.div__password__2 {
+    height: 40px;
+    width: 100%;
+}
+
+.div__password__2 input {
+    width: 100%;
+    height: 100%;
+    border: 0.5px solid rgb(196, 196, 196);
+    border-radius: 5px;
+    outline-color: rgb(222, 39, 105);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div__button__check {
+    display: flex;
+    width: 100%;
+    height: 24px;
+}
+
+.div__button__check input {
+    content: '';
+    height: 20px;
+    width: 20px;
+    accent-color: #9019db;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.div__button__check p {
+    margin: 0 0 0 10px;
+    color: var(--color-p);
+}
+
+.terms {
+    color: #b968fc;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.div__button__sign__up {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+.div__button__sign__up button{
+    width: 97%;
+    height: 45px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: var(--new--button--color);
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: .9em;
+}
+
+.div__button__sign__up button:hover {
+    background-image: var(--button-color-hover);
+}
+
+.div__final {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+}
+
+.div__final p {
+    color: var(--color-p);
+}
+
+.div__final a {
+    text-decoration: none;
+    color: #b968fc;
+    font-weight: 700;
+}
+
+@media (max-width: 840px) {
+    body {
+        justify-content: center;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../src/img/background.png");
+        border-radius: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../src/img/background.png");
+        border-radius: 0;
+    } */
+
+    .background {
+        display: none;
+    }
+
+    .sign__up__main {
+        position: relative;
+        width: 80%;
+        height: 670px;
+        min-width: 355px;
+        max-width: 600px;
+        background: var(--container-color);
+        margin: 0;
+    }
+
+    .card__main {
+        min-width: 286px;
+        max-width: 400px;
+        height: 536px;
+    }
+
+    /* Comienzo Sección de botón volver */
+
+.button__back__container {
+    left: 35px;
+    top: 35px;
+    width: 40px;
+    height: 40px;
+    background-image: var(--button-color);
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    justify-content: center;
+}
+
+.button__back__container p {
+    display: none;
+}
+
+.button__back__container:hover {
+    background-image: var(--button-color-hover);
+}
+
+.span__icon {
+    padding: 0;
+    display: block;
+}
+
+.span__icon .ion-android-arrow-back {
+    font-size: 25px;
+    color: #020202b6;
+}
+
+.button__back__container a {
+    border-radius: 50%;
+}
+
+.button__back__container a:hover{
+    border-radius: 50%;
+}
+
+/* Final seccion botón volver */
+
+    .div__button__check {
+        height: 50px;
+    }
+
+    .sign__up__header h1 {
+        /* color: rgb(255, 255, 255); */
+        color: rgb(113 14 203);
+        margin: 0 30px;
+        background-color: #ff8177;
+        background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        font-weight: 700;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 25px 0px;
+    }
+
+    .sign__up__header p {
+        color: var(--color-p);
+        margin: 15px 0 35px 0;
+        font-size: .9em;
+        font-weight: 300;
+    }
+
+    .div__button__sign__up button {
+        box-shadow: 3px 3px 6px 0 rgba(20, 16, 16, 0.445);
+    }
+
+
+
+
+
+
+
+
+
+
+    
+}

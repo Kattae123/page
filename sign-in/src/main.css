@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-main: linear-gradient(195deg,#EC407A 0%,#D81B60 100%);
+    --color-main2: linear-gradient(195deg,#40ec40 0%,#1bd84a 100%);
+    --color-main-amazing: linear-gradient(195deg,#222222 0%,#181818 100%);
+    --good-orange: rgb(239, 59, 45);
+    --container-color: rgba(0, 0, 0, 0.404);
+    --container-color2: rgb(253, 253, 253);
+    --button-color: linear-gradient(195deg,#2F034A 0%,#541690 100%);
+    --button-color-2: linear-gradient(195deg,#d32323 0%,#4c0909 100%);
+    --link-color: #b968fc;
+    /* colores sacados de web */
+    --new-color-main: linear-gradient(195deg,#2F034A 0%,#541690 100%);
+    --button-color-hover: linear-gradient(195deg,#530c80 0%,#711ac7 100%);
+    --button-color-active: linear-gradient(195deg,#2F034A 0%,#541690 100%);
+}
+
+html,body {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://wallpapercave.com/wp/wp3369550.jpg");
+    /* background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/sign-in/src/img/background.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 411.94px;
+    height: 570px;
+    /* min-width: 400px;
+    min-height: 550px; */
+    background: var(--container-color);
+    border-radius: 12px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.card-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 179.56px;
+}
+
+.card-header-main {
+    font-size: 1.30rem;
+    font-weight: 700;
+    top: -20px;
+    position: absolute;
+    width: 93%;
+    height: 187.25px;
+    background-image: var(--new-color-main);
+    border-radius: 8px;
+    color: rgb(248, 244, 244);
+}
+
+/* Comienzo Sección de botón volver
+
+.button__back__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 37px;
+    z-index: 100000;
+    top: 70px;
+    left: -30px;
+    background-color: #fcfcfc;
+    border: .5px solid rgba(116, 103, 103, 0.493);
+    border-radius:50px 0 0 50px;
+    box-shadow: 1px 1px 8px 0 rgba(124, 124, 124, 0.726);
+}
+
+.button__back__container:hover {
+    background-color: #e2dfdf;
+}
+
+.span__icon {
+    padding-left: 7px;
+    position: absolute;
+}
+
+.span__icon .ion-android-arrow-back {
+    font-size: 25px;
+    color: #020202b6;
+    display: none;
+}
+
+.button__back__container a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgba(13, 13, 20, 0.842);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.button__back__container a:hover{
+    color: #1e0950;
+}
+
+/* Final seccion botón volver */
+
+/* Comienzo Sección de botón volver 2 */
+
+.button__back__container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    z-index: 100000;
+    top: 15px;
+    left: 15px;
+    background-image: linear-gradient(195deg,#ffffff 0%,#d9d9d9 100%);
+    border: .5px solid rgba(116, 103, 103, 0.493);
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 0 rgba(124, 124, 124, 0.726);
+}
+
+.button__back__container:hover {
+    background-color: #e2dfdf;
+}
+
+.span__icon {
+    padding-left: 0px;
+    position: absolute;
+}
+
+.span__icon .ion-android-arrow-back {
+    display: block;
+    font-size: 25px;
+    color: #020202b6;
+    align-self: center;
+}
+
+.button__back__container a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: rgba(13, 13, 20, 0.842);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.button__back__container a p {
+    display: none   ;
+}
+
+.button__back__container a:hover{
+    color: #1e0950;
+}
+
+/* Final seccion botón volver 2 */
+
+.card-header-main h4 {
+    margin: 25px 10px;
+}
+
+.card-header-main .h6-1 {
+    margin-bottom: 5px;
+}
+
+.card-header-main .h6-2 {
+    margin-bottom: 20px;
+}
+
+.icons-social {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.icons1, .icons2 {
+    margin-right: 54px;
+    text-decoration: none;
+}
+
+.icons-social a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-body {
+    width: 100%;
+    position: relative;
+    top: 30px;
+}
+
+.card-body-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-email {
+    width: 100%;
+    height: 37.44px;
+    margin: 0 0 20px 0;
+}
+
+.div-email input {
+    width: 87%;
+    height: 100%;
+    padding: 7px;
+    border-radius: 5px;   
+    border: .5px solid rgb(196, 196, 196);
+    outline-color: rgb(222, 39, 105);
+}
+
+.div-password {
+    width: 100%;
+    height: 37.44px;
+    margin: 0 0 21px 0;
+}
+
+.div-password input {
+    width: 87%;
+    height: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: .5px solid rgb(196, 196, 196);
+    outline-color: rgb(222, 39, 105);
+}
+
+.remember-me {
+    width: 90%;
+    height: 71.67px;
+}
+
+.remember-me-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* .remember-me-button-container {
+    position: relative;
+    width: 33px;
+    height: 17px;
+    background-color: #b9b9b9;
+    border-radius: 50px;
+}
+
+.remember-me-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #777777;
+    transition: all 0.3s ease;
+} */
+
+.remember-me-button-container {
+    position: relative;
+    min-width: 40px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    border-radius: 6px;
+    cursor: pointer;
+    height: 22px;
+}
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: #b9b9b9;
+    transition: all 0.3s ease;
+}
+
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    border: 1px solid rgb(129, 129, 129)
+}
+
+.toggle::before{
+    left: 20px;
+}
+
+body.dark .switch::before{
+    left: 20px;
+}
+
+.remember-me p {
+    color: rgb(149 149 149);
+    font-weight: 400;
+    margin: 3px 0 0 10px;
+}
+
+.form-label {
+    display: none;
+}
+.div-sign-in {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    width: 87%;
+    border-radius: 5px;
+    border: none;
+    /* box-shadow: 2px 2px 10px rgb(0 0 0 / 50%); */
+    color: white;
+    background-image: var(--button-color);
+    /* box-shadow: 0 3px 3px 0 rgb(233 30 99 / 15%), 0 3px 1px -2px rgb(233 30 99 / 20%), 0 1px 5px 0 rgb(233 30 99 / 15%); */
+    cursor: pointer;
+}
+
+button:hover {
+   background-image: var(--button-color-hover);
+}
+
+button:active {
+    background-image: var(--button-color-active);
+}
+
+.final {
+    width: 100%;
+    margin: 30px 0 0 0;
+    font-weight: 400;
+    font-size: .90rem;
+}
+
+.haventaccount {
+    color: rgb(149 149 149);
+    margin: 10px 0 20px 0;
+}
+
+.final a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.final a:hover {
+    color: linear-gradient(195deg,#f85f92 0%,#f34786 100%);
+ }
+ 
+.final a:active {
+     color: linear-gradient(195deg,#f12d6e 0%,#f81f6e 100%);
+ }
+
+.forgotpassword {
+    color: rgb(149 149 149);
+}
+
+@media (max-width: 940px) {
+
+    .container {
+        width: 350px;
+        height: 530px;
+        min-width: 350px;
+    }
+
+    .card-header {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 140px;
+    }
+
+    .card-header-main {
+        font-size: 1.30rem;
+        font-weight: 700;
+        top: -20px;
+        position: absolute;
+        width: 93%;
+        height: 140px;
+        border-radius: 8px;
+        color: rgb(248, 244, 244);
+    }
+    .card-header-main h4 {
+        margin: 20px 0 15px 0;
+    }
+    
+    .card-header-main .h6-2 {
+        margin-bottom: 12px;
+    }
+
+    /* Comienzo Sección de botón volver */
+
+.button__back__container {
+    left: 15px;
+    top: 50px;
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(195deg,#ffffff 0%,#d9d9d9 100%);
+    border: .5px solid rgba(116, 103, 103, 0.493);
+    border-radius: 50%;
+    box-shadow: 1px 1px 8px 0 rgba(6, 6, 6, 0.72);
+    justify-content: center;
+}
+
+.button__back__container p {
+    display: none;
+}
+
+.button__back__container:hover {
+    background-image: linear-gradient(195deg,#cccccc 0%,#999999 100%);
+}
+
+.span__icon {
+    padding: 0;
+}
+
+.span__icon .ion-android-arrow-back {
+    display: block;
+    font-size: 25px;
+    color: #020202b6;
+}
+
+.button__back__container a {
+    
+    border-radius: 50%;
+
+}
+
+.button__back__container a:hover{
+    
+    border-radius: 50%;
+}
+
+/* Final seccion botón volver */
+
+    .div-password {
+        width: 100%;
+        height: 37.44px;
+        margin: 0 0 0 0;
+    }
+
+    .remember-me-main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+}

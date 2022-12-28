@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" href="../src/normalize.css" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="sign__up__main">
+        <!-- Inicio del botón de volver -->
+        <div class="button__back__container">
+            <span class="span__icon">
+                <i class="ion-android-arrow-back"></i>
+            </span>
+            <a href="../index.html">
+                <p>Volver</p>
+            </a>
+        </div>
+        <!-- Final del botón de volver -->
+        <div class="div__card__main">
+            <div class="card__main">
+                <!-- aquí deben haber 5 divs -->
+                <div class="sign__up__header">
+                    <h1>Registrarme</h1>
+                    <p>Coloca tus datos personales para proceder con el registro</p>
+                </div>
+                <div class="div__form">
+                    <form>
+                        <div class="form__space">
+                            <div class="div__name">
+                                <input type="text" required placeholder="Nombre Completo" id="name" name="name" />
+                            </div>
+                            <div class="div__email">
+                                <input type="email" name="email" required id="email" placeholder="Correo Electrónico" />
+                            </div>
+                            <div class="div__password">
+                                <input type="password" name="password" required id="password"
+                                    placeholder="Contraseña" />
+                            </div>
+                            <div class="div__password__2">
+                                <input type="password" name="confirm" id="confirm" required
+                                    placeholder="Confirmar Contraseña" />
+                            </div>
+                            <div class="div__button__check">
+                                <input type="checkbox" name="checkbox-terms" id="check" required />
+                                <p>
+                                    Acepto los
+                                    <a href="#" class="terms"><span class="terms">Términos y condiciones</span></a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="div__button__sign__up">
+                            <input type="button" value="SIGN UP" id="sign-up" style="display: none !important" />
+                            <button>Registrarme</button>
+                        </div>
+                        <div class="div__final">
+                            <p class="final">
+                                Ya tienes una cuenta?
+                                <a href="../sign-in/index.html">Iniciar Sesión</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

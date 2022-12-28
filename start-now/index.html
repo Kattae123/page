@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu by Kattae</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body id="body">
+    <nav class="sidebar sidebar_move">
+        <i class='bx bx-chevron-right toggle-movil btnMenu-movil'></i>
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="./src/image/logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Net$ubi</span>
+                    <span class="whereiam" id="whereiam"></span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle btnMenu'></i>
+        </header>
+        <div class="menu__container">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-links nav-search"><i class="bx bx-search icon"></i><input
+                            type="text" name="search" id="search" placeholder="Search..." class="search"></li>
+                    <li class="nav-links nav-search-movil"><i class="bx bx-search icon"></i><input
+                            type="text" name="searchMovil" id="searchMovil" placeholder="Search..." class="searchMovil"></li>
+                    <li class="nav-links"><a href="#" class="list where1 active"><i class='bx bxs-dashboard'></i><span
+                                class="text nav-text">Dashboard</span></a></li>
+                    <li class="nav-links"><a href="#" class="list where2"><i class="bx bx-home-alt icon"></i><span
+                                class="text nav-text">Home</span></a></li>
+                    <li class="nav-links"><a href="#" class="list where3"><i class='bx bxs-bell'></i><span
+                                class="text nav-text">Notifications</span></a></li>
+                    <li class="nav-links"><a href="#" class="list where4"><i class='bx bx-cog'></i><span
+                                class="text nav-text">Settings</span></a></li>
+                    <!-- Ponle un hide a los iconos que quieras ocultar antes de expandir el menu -->
+                    <li class="nav-links hide"><a href="#" class="list where5"><i class='bx bx-cog'></i><span
+                                class="text nav-text">Settings</span></a></li>
+                    <li class="nav-links hide"><a href="#" class="list where6"><i class='bx bx-cog'></i><span
+                                class="text nav-text">Settings</span></a></li>
+
+                </ul>
+                <div class="bottom-content menu-links">
+                    <li class="logout nav-links">
+                        <a href="#">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Logout</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <div class="squares">
+            <div class="activities__container">
+                <h1>Actividades</h1>
+                <span id="activities"class="activities">0/12</span>
+            </div>
+            <div class="referrals__container">
+                <h1>Referidos</h1>
+                <span id="referrals" class="referrals">2/2</span>
+            </div>
+        </div>
+            <div class="users__container">
+                <input type="button" value="User">
+            </div>
+            
+            <div class="buttons__container">
+                <input type="button" value="VER TU RED">
+                <input type="button" value="PRORROGA">
+            </div>
+
+            <div class="stadistics__container">
+                
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./src/app.js"></script>
+</body>
+
+</html>

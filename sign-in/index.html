@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,700&family=Sen&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="../src/normalize.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card toggle">
+            <div class="card-header">
+                <div class="card-header-main">
+                    <!-- Inicio del botón de volver -->
+                    <div class="button__back__container">
+                        <span class="span__icon">
+                            <i class="ion-android-arrow-back"></i>
+                        </span>
+                        <a href="../index.html">
+                            <p>Volver</p>
+                        </a>
+                    </div>
+                    <!-- Final del botón de volver -->
+                    <h4>Iniciar Sesión</h4>
+                    <h6 class="h6-1">
+                        <span>Email:</span>
+                        email@mail.com
+                    </h6>
+                    <h6 class="h6-2">
+                        <span>Contraseña:</span>
+                        ********
+                    </h6>
+                    <div class="icons-social">
+                        <div class="icons1"><a href="#" class="ion-social-facebook"></a></div>
+                        <div class="icons2"><a href="#" class="ion-social-github"></a></div>
+                        <div class="icons3"><a href="#" class="ion-social-google"></a></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="" class="card-body-form">
+                    <div class="div-email">
+                        <label class="form-label">"Email"</label>
+                        <input type="email" name="email" id="email" placeholder="Correo Electrónico" required="true">
+                    </div>
+                    <div class="div-password">
+                        <label for="" class="form-label">"Contraseña"</label>
+                        <input type="password" name="password" id="password" placeholder="Contraseña" required="true">
+
+                    </div>
+                    <div class="remember-me">
+                        <!-- <div class="remember-me-main"><div class="remember-me-button-container"><div class="remember-me-ball"></div></div><p>Recuérdame</p></div> -->
+                        <div class="remember-me-main">
+
+                            <div class="toggle-switch remember-me-button-container">
+                                <span class="switch remember-me-ball"></span>
+                            </div>
+                            <p>Recuerdame</p>
+                        </div>
+
+                    </div>
+                    <div class="div-sign-in">
+                        <button>Iniciar Sesión</button>
+                    </div>
+                    <div class="final">
+                        <p class="haventaccount">
+                            No tienes una cuenta? <a href="../sign-up/index.html">Regístrate</a>
+                        </p>
+                        <p class="forgotpassword">
+                            Olvidaste tu contraseña? <a href="#">Restablecer</a>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
